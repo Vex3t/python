@@ -134,4 +134,40 @@ print (Tom)
 print (Lisa)
 print (Michel)
 11"""""
+"""""12
+def true_false():
+        a = 17
+        b = 12
+        if a<b:
+                print("FR")
+        else:
+                print ("Crap")
+
+
+
+true_false()
+12"""""
+"""""13
+def print_messages():
+    # определение локальных функций
+    def say_hello(): 
+        print("Hello")
+    def say_goodbye(): 
+        print("Good Bye")
+    # вызов локальных функций
+    say_hello()
+    say_goodbye()
+ 
+# Вызов функции print_messages
+print_messages()
+ 
+#say_hello() # вне функции print_messages функция say_hello не доступна
+13"""""
+
+def add_numbers(a, b):
+    sum = a + b
+    
+
+result = add_numbers(3, 5)
+print(result)  # Выводит 8
 
