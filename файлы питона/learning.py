@@ -164,10 +164,115 @@ print_messages()
 #say_hello() # вне функции print_messages функция say_hello не доступна
 13"""""
 
+"""""14
 def add_numbers(a, b):
     sum = a + b
     
 
 result = add_numbers(3, 5)
 print(result)  # Выводит 8
+14"""""
+ 
+"""""14
+a = 5
+b = 6
+result = 5 == 6  # сохраняем результат операции в переменную
+print(result)  # False - 5 не равно 6
+print(a != b)  # True
+print(a > b)  # False - 5 меньше 6
+print(a < b)  # True
+ 
+bool1 = True
+bool2 = False
+print(bool1 == bool2)  # False - bool1 не равно bool2
+14"""""
+"""""15
+a = input ('s')
+b = input ('s')
 
+print (int(a)+int(b))
+15"""""
+
+"""""16
+#My tipical calculator
+
+f1 = float(input("Введите ваше первое число:  "))
+f2 = float(input("Введите ваше второе число:  "))
+
+print(" Выберите опцию:  ")
+print("1: умножение  ")
+print("2: деление   ")
+print("3: вычетание  ")
+print("4: сложение  ")
+print("5: отнимание  ")
+
+chose = float(input("1/2/3/4/5:    "))
+
+if chose == 1:
+    result = f1*f2
+    print (result, "Это и есть ваш результат")
+
+elif chose == 2:
+    result = f1/f2
+    print (result, "Это и есть ваш результат")
+
+elif chose == 3:
+    result = f1%f2
+    print (result, "Это и есть ваш результат")
+
+elif chose == 4:
+    result = f1+f2
+    print (result, "Это и есть ваш результат")
+
+elif chose == 5:
+    result = f1-f2
+    print (result, "Это и есть ваш результат")
+    16"""""
+
+
+"""""17
+def multiply(a, b=2):
+    return a * b
+
+
+result1 = multiply(3)
+result2 = multiply(3,4)
+
+print (result1, result2)
+17"""""
+
+"""""18
+a = int(input("Введите ваш возраст:   "))
+
+if a <=12:
+    print("Это ребенок")
+elif a<=22:
+    print("Это взрослый")
+else:
+    print('Это дед')
+18"""""
+"""""19
+word = ""
+while word != "стоп":
+    word = input("Введите слово: ")
+    print("Вы ввели: " + word)
+19"""""
+
+
+    
+
+# list = [1,2,3,4,5,6,7]
+
+# for list in list:
+#     print (list)
+
+    
+# string = "hello"
+
+# for char in string:
+#     print(char)
+
+first_world = ("MOMMY")
+
+count = len(first_world)
+print("В этой строке"    ,count,    "букв")
