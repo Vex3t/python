@@ -258,21 +258,14 @@ while word != "стоп":
     print("Вы ввели: " + word)
 19"""""
 
-
-    
-
-# list = [1,2,3,4,5,6,7]
-
-# for list in list:
-#     print (list)
-
-    
-# string = "hello"
-
-# for char in string:
-#     print(char)
-
-first_world = ("MOMMY")
-
-count = len(first_world)
-print("В этой строке"    ,count,    "букв")
+numbers = []
+while True:
+    n = input("Введите число (или 'стоп', чтобы закончить ввод): ")
+    if n == "стоп":
+        break
+    numbers.append(int(n))
+if len(numbers) > 0:
+    print("Наибольшее число: ", max(numbers))
+    print("Наименьшее число: ", min(numbers))
+else:
+    print("Список пуст")
